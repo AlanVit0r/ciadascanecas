@@ -1,0 +1,35 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.step {
+  background: #f9f9f9;
+  border-left: 4px solid #0070f3;
+  padding: 1rem;
+  border-radius: 4px;
+}

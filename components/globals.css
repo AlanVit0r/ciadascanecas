@@ -1,0 +1,66 @@
+:root {
+  --font-size-base: 16px;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --color-primary: #8B4513;
+  --color-secondary: #D2691E;
+  --color-accent: #FFD700;
+  --color-background: #FFF8DC;
+  --color-text: #3E2723;
+  --color-text-light: #5D4037;
+  --heading-font-weight: 700;
+  --body-line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 14px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--body-line-height);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--heading-font-weight);
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  color: var(--color-text);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
